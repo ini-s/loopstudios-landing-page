@@ -1,0 +1,66 @@
+.home {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    color: white;
+}
+
+.home picture {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.text-container {
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 1rem;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+}
+
+@media screen and (min-width: 375px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .text-container {
+        margin-left: 8rem;
+        right: 40%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 967px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .text-container {
+        right: 50%;
+    }
+}

@@ -1,0 +1,54 @@
+header {
+    padding: 3rem 1.5rem;
+    position: absolute;
+    top: 0;
+    /* width: 100%; */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav nav {
+    width: 30%;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    color: white;
+}
+
+.open-menu {
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.logo {
+    width: 10rem;
+}
+
+@media screen and (min-width: 767px) {
+    .open-menu {
+        display: none;
+    }
+
+    .main-nav {
+        position: relative;
+    }
+
+    header {
+        padding-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-nav nav {
+        display: none;
+    }
+}

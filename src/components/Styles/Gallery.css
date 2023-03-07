@@ -1,0 +1,53 @@
+.gallery {
+    text-align: center;
+    padding: 0 1.5rem 5rem 1.5rem;
+}
+
+.desktop-see-all {
+    margin-top: 0 !important;
+    display: none;
+}
+
+.mobile-see-all,
+.desktop-see-all {
+    margin-top: 2rem;
+    border: 1.5px solid black;
+    padding: 0.7rem 2.5rem;
+    background-color: white;
+    font-weight: 400;
+    font-family: 'Alata', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 767px) {
+    .images-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5rem;
+    }
+
+    .mobile-see-all {
+        display: none;
+    }
+
+    .desktop-see-all {
+        display: block;
+    }
+
+    .top-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem 3rem 5rem;
+    }
+
+    .gallery h2 {
+        margin: 0
+    }
+
+    .gallery{
+        padding-bottom: 8rem;
+    }
+}
