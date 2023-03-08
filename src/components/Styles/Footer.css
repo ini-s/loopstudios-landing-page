@@ -41,12 +41,12 @@
 
 .footer-icons {
     padding-block: 1.5rem;
-    cursor: pointer;
 }
 
 .icon {
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 .footer-icons .icon {
