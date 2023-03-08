@@ -7,7 +7,7 @@ export default function SideNav({ isActive, setIsActive }) {
         setIsActive(prevValue => !prevValue)
     }
     return (
-        <section className="side-nav" style={customStyle}>
+        <div className="side-nav" style={customStyle}>
             <div className="side-nav-top">
                 <img className="logo" src="/images/logo.png" alt="logo" />
                 <img className="close-icon" onClick={closeSideNav} src="/images/icon-close.png" alt="close-icon" />
@@ -21,6 +21,6 @@ export default function SideNav({ isActive, setIsActive }) {
                     <li><a href="#support">Support</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     )
 }
