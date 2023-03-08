@@ -30,9 +30,9 @@
     transition: 0.4s ease;
 }
 
-.footer-nav li:hover a:before {
-    width: 33%;
-    left: 23%;
+.footer-nav li a:hover:before {
+    width: 10%;
+    left: 45%;
 }
 
 .footer-logo {
@@ -50,7 +50,7 @@
 }
 
 .footer-icons img {
-    padding-right: 1rem;
+    margin-right: 1rem;
     position: relative;
 }
 
@@ -69,9 +69,6 @@
     width: 60%;
 }
 
-
-
-
 @media screen and (min-width: 767px) {
 
     .footer {
@@ -83,6 +80,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .footer-nav li a:hover:before {
+        width: 33%;
+        left: 23%;
     }
 
     .footer-icons {
@@ -103,7 +105,7 @@
     }
 
     .footer-nav li {
-        padding-right: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .copyright {
@@ -123,6 +125,6 @@
 
 @media screen and (min-width: 900px) {
     .footer-nav li {
-        padding-right: 1.5rem;
+        margin-right: 1.5rem;
     }
 }

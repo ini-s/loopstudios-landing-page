@@ -33,7 +33,7 @@ header {
     transition: 0.4s ease;
 }
 
-.main-nav ul li:hover a:before{
+.main-nav ul li a:hover:before{
     width: 33%;
     left: 23%;
 }
