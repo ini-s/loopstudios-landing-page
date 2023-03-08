@@ -15,10 +15,18 @@ export default function Footer() {
             </div>
             <div className="footer-right">
                 <div className="footer-icons">
-                    <img src="/images/icon-facebook.png" alt="icon" />
-                    <img src="/images/icon-twitter.png" alt="icon" />
-                    <img src="/images/icon-pinterest.png" alt="icon" />
-                    <img className="instagram" src="/images/icon-instagram.png" alt="icon" />
+                    <div className="icon">
+                        <img src="/images/icon-facebook.png" alt="icon" />
+                    </div>
+                    <div className="icon">
+                        <img src="/images/icon-twitter.png" alt="icon" />
+                    </div>
+                    <div className="icon">
+                        <img src="/images/icon-pinterest.png" alt="icon" />
+                    </div>
+                    <div className="icon">
+                        <img className="instagram" src="/images/icon-instagram.png" alt="icon" />
+                    </div>
                 </div>
                 <div className="copyright">
                     <p>© 2021 Loopstudios. All rights reserved.</p>

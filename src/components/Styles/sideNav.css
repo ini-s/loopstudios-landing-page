@@ -9,6 +9,10 @@
     display: none;
 }
 
+.side-nav nav {
+    padding: 1.5rem;
+}
+
 .side-nav ul {
     list-style: none;
     padding-top: 5rem;

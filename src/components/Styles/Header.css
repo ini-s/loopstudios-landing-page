@@ -2,7 +2,8 @@ header {
     padding: 3rem 1.5rem;
     position: absolute;
     top: 0;
-    /* width: 100%; */
+    width: 100%;
+    z-index: 3;
 }
 
 .main-nav {
@@ -11,13 +12,30 @@ header {
     align-items: center;
 }
 
-.main-nav nav {
-    width: 30%;
-}
-
 .main-nav ul {
     display: flex;
     justify-content: space-between;
+}
+
+.main-nav ul li {
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+.main-nav ul li a:before{
+    content: "";
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    width: 0;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.main-nav ul li:hover a:before{
+    width: 33%;
+    left: 23%;
 }
 
 .main-nav a {
@@ -43,12 +61,18 @@ header {
     }
 
     header {
-        padding-left: 8rem;
+        padding: 3rem 8rem;
     }
 }
 
 @media screen and (max-width: 767px) {
     .main-nav nav {
         display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main-nav ul li {
+        padding-right: 1rem;
     }
 }

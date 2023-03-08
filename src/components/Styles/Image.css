@@ -12,7 +12,6 @@ picture img {
 
 .title {
     text-transform: uppercase;
-    color: white;
     position: absolute;
     z-index: 1;
     top: 3.5rem;
@@ -26,6 +25,10 @@ picture img {
     font-weight: 300;
 }
 
+.title h3:hover{
+    cursor: pointer;
+}
+
 /* .overlay {
     height: 100%;
     width: 100%;
@@ -35,9 +38,19 @@ picture img {
 .image-box {
     position: relative;
     padding-top: 1.5rem;
-    flex-basis: 250px;
+    flex-basis: 270px;
+    color: white;
+    transition: 0.4s ease;
 }
 
+.image-box img:hover{
+    cursor:pointer;
+    opacity: 0.4;
+}
+
+.image-box:hover{
+    color: black !important;
+}
 
 .overlay{
     position: absolute;
@@ -70,6 +83,11 @@ picture img {
     }
 }
 
+@media screen and (min-width: 900px){
+    .image-box{
+        flex-basis: 250px;
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .title h3 {

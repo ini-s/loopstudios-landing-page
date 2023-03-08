@@ -18,6 +18,14 @@
     font-family: 'Alata', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 1rem;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.mobile-see-all:hover,
+.desktop-see-all:hover {
+    background-color: black;
+    color: white;
 }
 
 @media screen and (min-width: 767px) {
@@ -47,7 +55,7 @@
         margin: 0
     }
 
-    .gallery{
+    .gallery {
         padding-bottom: 8rem;
     }
 }

@@ -26,7 +26,7 @@ export default function Header() {
                 </nav>
                 <img className="open-menu" onClick={openSideNav} src={hamburger} alt="hamburger-menu" />
             </div>
-            <SideNav isActive={isActive} ssetIsActive={setIsActive} />
+            <SideNav isActive={isActive} setIsActive={setIsActive} />
         </header>
     )
 }

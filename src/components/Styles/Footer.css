@@ -16,6 +16,23 @@
 .footer-nav li {
     padding-bottom: 1.5rem;
     font-size: 1.2rem;
+    position: relative;
+}
+
+.footer-nav li a:before {
+    content: "";
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    width: 0;
+    bottom: 0.8rem;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.footer-nav li:hover a:before {
+    width: 33%;
+    left: 23%;
 }
 
 .footer-logo {
@@ -27,9 +44,33 @@
     cursor: pointer;
 }
 
+.icon {
+    display: inline-block;
+    position: relative;
+}
+
 .footer-icons img {
     padding-right: 1rem;
+    position: relative;
 }
+
+.footer-icons .icon:before {
+    content: "";
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    width: 0;
+    bottom: -0.2rem;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.footer-icons .icon:hover:before {
+    width: 60%;
+}
+
+
+
 
 @media screen and (min-width: 767px) {
 
