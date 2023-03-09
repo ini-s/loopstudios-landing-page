@@ -11,7 +11,6 @@ export default function Image({ imgName, topTitle, bottomTitle }) {
                 <h3>{topTitle}</h3>
                 <h3>{bottomTitle}</h3>
             </div>
-            {/* <div className="overlay"></div> */}
         </div>
     )
 }
